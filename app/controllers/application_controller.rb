@@ -9,13 +9,13 @@ class ApplicationController < ActionController::Base
 	before_action :set_copyright	
 
 	def set_copyright
-		@copyright = RahymovViewTool::Renderer.copyright 'Ya Rahymov' ,'All rights reserved'
+		@copyright = RahymovViewTool::Renderer.copyright 'Ya Rahymov','All rights reserved'
 	end
 	
 	module RahymovViewTool
 	 class Renderer
 		def self.copyright name,msg
-			"&copy; #{Time.now.year} | <b>#{name}</br> #{msg}".html_safe
+			"&copy; #{Time.now.year} | <b>#{name} #{msg}".html_safe
 		end
 	end
 end

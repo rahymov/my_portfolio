@@ -18,7 +18,7 @@ module ApplicationHelper
 	end
 
 	def copyright_generator
-		@copyright = RahymovViewTool::Renderer.copyright 'Ya Rahymov','All rights reserved'
+		@copyright = RahymovViewTool::Renderer.copyright 'Ya Rahymov All rights reserved'
 	end
 end
  
